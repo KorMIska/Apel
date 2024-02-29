@@ -58,7 +58,7 @@ public class CharacterControllerMovement : BaseCharacterMovement
         if (!characterController.isGrounded)
         {
             // Применяем гравитацию
-            verticalVelocity -= 9.81f * Time.deltaTime; // Используйте значение гравитации, соответствующее вашей сцене
+            verticalVelocity -= 25f * Time.deltaTime; // Используйте значение гравитации, соответствующее вашей сцене
         }
         else
         {
