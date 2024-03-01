@@ -6,7 +6,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638447222462593422
+      ticks: 638448847141572341
     m_Hash: 1646665576
   m_LockFileStatus:
     m_FilePath: "C:/Users/\u044F\u044F\u044F\u044F\u044F\u044F\u044F\u044F/Documents/GitHub/Apel/New
@@ -15,7 +15,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638447223069380153
+      ticks: 638448847157311301
     m_Hash: 3233714513
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -118,8 +118,10 @@ m_ResolvedPackages:
     - 2.1.0-preview.6
     - 2.1.0
     - 2.2.0
+    - 2.3.1
     compatible:
     - 2.2.0
+    - 2.3.1
     recommended: 2.2.0
     deprecated: []
   dependencies: []

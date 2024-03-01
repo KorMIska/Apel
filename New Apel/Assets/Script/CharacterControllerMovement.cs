@@ -33,14 +33,7 @@ public class CharacterControllerMovement : BaseCharacterMovement
         else
             animator.SetFloat("Speed", 0);
 
-        if (Input.GetButton("Fire1"))
-        {
-            animator.SetBool("nidAnim", true);
-        }
-        else
-        {
-            animator.SetBool("nidAnim", false);
-        }
+
 
         print(movementVector);
     }
