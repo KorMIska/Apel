@@ -33,9 +33,6 @@ public class CharacterControllerMovement : BaseCharacterMovement
         else
             animator.SetFloat("Speed", 0);
 
-
-
-        print(movementVector);
     }
 
     private void Jamp()
