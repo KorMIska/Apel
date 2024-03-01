@@ -360,6 +360,7 @@
 "Assets/Script/Dether_Efect.cs"
 "Assets/Script/FollowObjectView.cs"
 "Assets/Script/hitting the target.cs"
+"Assets/Script/OCHKO_schetchik.cs"
 "Assets/Script/RigidbodyMovement.cs"
 "Assets/Script/RigidbodyRotation.cs"
 -langversion:9.0
