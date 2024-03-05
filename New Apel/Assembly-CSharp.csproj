@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
+    <Compile Include="Assets\CharacterMinu.cs" />
     <Compile Include="Assets\Script\CharacterControl\CharacterControllerMovement.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\Script\CharacterControl\RigidbodyMovement.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
     <Compile Include="Assets\Script\Roommaneger.cs" />
     <Compile Include="Assets\Script\hitting the target.cs" />
+    <Compile Include="Assets\Menu.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
     <Compile Include="Assets\Script\CharacterControl\RigidbodyRotation.cs" />
