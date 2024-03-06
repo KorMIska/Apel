@@ -73,6 +73,7 @@
     <Compile Include="Assets\Script\OCHKO_schetchik.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
     <Compile Include="Assets\Script\Roommaneger.cs" />
+    <Compile Include="Assets\Script\UpdateTextUI.cs" />
     <Compile Include="Assets\Script\hitting the target.cs" />
     <Compile Include="Assets\Menu.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />

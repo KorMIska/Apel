@@ -397,6 +397,7 @@
 "Assets/Script/OCHKO_schetchik.cs"
 "Assets/Script/PlauerSetup.cs"
 "Assets/Script/Roommaneger.cs"
+"Assets/Script/UpdateTextUI.cs"
 -langversion:9.0
 
 /deterministic
