@@ -389,6 +389,7 @@
 "Assets/Script/CharacterControl/BaseCharacterRotation.cs"
 "Assets/Script/CharacterControl/CharacterControllerMovement.cs"
 "Assets/Script/CharacterControl/CharacterControllerRotation.cs"
+"Assets/Script/CharacterControl/MultyCharacterControler.cs"
 "Assets/Script/CharacterControl/RigidbodyMovement.cs"
 "Assets/Script/CharacterControl/RigidbodyRotation.cs"
 "Assets/Script/Dether_Efect.cs"

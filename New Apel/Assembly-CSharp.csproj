@@ -63,6 +63,7 @@
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\CharacterMinu.cs" />
     <Compile Include="Assets\Script\CharacterControl\CharacterControllerMovement.cs" />
+    <Compile Include="Assets\Script\CharacterControl\MultyCharacterControler.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
     <Compile Include="Assets\Script\CharacterControl\RigidbodyMovement.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
