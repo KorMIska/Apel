@@ -108,7 +108,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 4
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -124,7 +124,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3352139713358567702}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!114 &4795005235678191827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,15 +382,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e6a9aea7375863c49811342d7569e454, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 69.41115
+      value: 314.8187
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e6a9aea7375863c49811342d7569e454, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.4544497
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e6a9aea7375863c49811342d7569e454, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 42.397015
+      value: 256.68103
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e6a9aea7375863c49811342d7569e454, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1132,6 +1132,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6a9aea7375863c49811342d7569e454, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5120558215778061189}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6a9aea7375863c49811342d7569e454, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5018028126626152048}
   m_SourcePrefab: {fileID: 100100000, guid: e6a9aea7375863c49811342d7569e454, type: 3}
 --- !u!4 &698364411812493630 stripped
 Transform:
@@ -1186,8 +1189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4ced44581914d4e94c39926d33f78c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 6
-  JumpS: 10
+  movementSpeed: 15
+  JumpS: 25
 --- !u!114 &5120558215778061189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1204,3 +1207,15 @@ MonoBehaviour:
   spawnPoint: {fileID: 4096155066675368194}
   force: 9000
   timer: 200
+--- !u!114 &5018028126626152048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7709768843466720070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0141d469fd64084087b57caf0fa510b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

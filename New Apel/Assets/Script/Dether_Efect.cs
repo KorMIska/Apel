@@ -13,14 +13,9 @@ public class Dether_Efect : MonoBehaviour
         if (obj != null) { _timer = obj.GetComponent<Atak>().timer; }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        _timer--;
-        if (_timer == 0) 
-        {
-            Destroy(this.gameObject);
-        }
-        
+        Destroy(this.gameObject);
     }
+
 }

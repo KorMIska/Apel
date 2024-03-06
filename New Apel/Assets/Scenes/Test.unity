@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &306126845 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7709768843466720070, guid: e162f567b5c903741b736c18798f1dfd, type: 3}
-  m_PrefabInstance: {fileID: 905015601}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &322631361
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,18 +309,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &700334431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 306126845}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0141d469fd64084087b57caf0fa510b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &905015601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -394,15 +377,10 @@ PrefabInstance:
       propertyPath: m_TargetDisplay
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3452006710976181624, guid: e162f567b5c903741b736c18798f1dfd, type: 3}
-    - {fileID: 5926520944670577736, guid: e162f567b5c903741b736c18798f1dfd, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7709768843466720070, guid: e162f567b5c903741b736c18798f1dfd, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 700334431}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e162f567b5c903741b736c18798f1dfd, type: 3}
 --- !u!1 &1462765934
 GameObject:
