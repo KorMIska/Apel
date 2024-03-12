@@ -24,6 +24,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5120558215778061189, guid: e162f567b5c903741b736c18798f1dfd, type: 3}
+      propertyPath: object_toSpawn
+      value: 
+      objectReference: {fileID: 689667626583958020, guid: c136f5f5aa930fb428295a77865b67ae, type: 3}
     - target: {fileID: 7040614160237140476, guid: e162f567b5c903741b736c18798f1dfd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 24.28926
@@ -68,8 +72,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ch47_nonPBR (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4158981857633536952, guid: e162f567b5c903741b736c18798f1dfd, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -101,12 +104,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132149155446097}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f25f955766beacd40b4f0be495bb6790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JumpS: 10
+  JumpS: 25
   movementSpeed: 20
 --- !u!114 &-1067953594767421011
 MonoBehaviour:
@@ -181,19 +184,19 @@ MonoBehaviour:
   ShowParameterInspector: 1
   m_SynchronizeParameters:
   - Type: 1
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: Speed
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: Anim
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: Atak
   - Type: 9
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: Recharge
   - Type: 3
-    SynchronizeType: 0
+    SynchronizeType: 2
     Name: NomerAtak
   m_SynchronizeLayers:
   - SynchronizeType: 0

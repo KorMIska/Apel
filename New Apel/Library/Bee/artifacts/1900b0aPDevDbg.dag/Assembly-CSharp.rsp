@@ -354,6 +354,7 @@
 "Assets/Script/PlauerSetup.cs"
 "Assets/Script/Roommaneger.cs"
 "Assets/Script/UpdateTextUI.cs"
+"Assets/StartAnim.cs"
 -langversion:9.0
 
 /deterministic

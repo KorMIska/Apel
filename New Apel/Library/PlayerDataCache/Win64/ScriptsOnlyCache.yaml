@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp:
     - Atak
+    - CharacterControllerMovement
     - CharacterControllerRotation
     - CharacterMinu
     - Dether_Efect
@@ -19,6 +20,7 @@ ScriptsOnlyBuild:
     - MultyCharacterControler
     - PlauerSetup
     - Roommaneger
+    - StartAnim
     - Updat
     PhotonUnityNetworking:
     - Photon.Pun.PhotonAnimatorView
@@ -36,6 +38,9 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PhotonViewInspector
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonTransformView
@@ -51,10 +56,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -200,29 +203,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5656}
     - Class: 114
-      Script: {instanceID: 6326}
+      Script: {instanceID: 5812}
     - Class: 114
-      Script: {instanceID: 6916}
+      Script: {instanceID: 6328}
     - Class: 114
-      Script: {instanceID: 6954}
+      Script: {instanceID: 6544}
     - Class: 114
-      Script: {instanceID: 7430}
+      Script: {instanceID: 6920}
     - Class: 114
-      Script: {instanceID: 7786}
+      Script: {instanceID: 6958}
     - Class: 114
-      Script: {instanceID: 7910}
+      Script: {instanceID: 7434}
     - Class: 114
-      Script: {instanceID: 8208}
+      Script: {instanceID: 7478}
     - Class: 114
-      Script: {instanceID: 26314}
+      Script: {instanceID: 7790}
     - Class: 114
-      Script: {instanceID: 27734}
+      Script: {instanceID: 7914}
     - Class: 114
-      Script: {instanceID: 27742}
+      Script: {instanceID: 8212}
     - Class: 114
-      Script: {instanceID: 27744}
+      Script: {instanceID: 26238}
     - Class: 114
-      Script: {instanceID: 27746}
+      Script: {instanceID: 26246}
+    - Class: 114
+      Script: {instanceID: 26248}
+    - Class: 114
+      Script: {instanceID: 26250}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1408,6 +1415,12 @@ ScriptsOnlyBuild:
     className: NamePickGui
   - hash:
       serializedVersion: 2
+      Hash: 55db8484d00722a7f5f278b191839a33
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: StartAnim
+  - hash:
+      serializedVersion: 2
       Hash: a110bde4bfc23aa01ed79d297b51daf9
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1538,6 +1551,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: fda3c6e9d87ff0ec6957b8d0df268b76
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MultyCharacterControler
   - hash:
       serializedVersion: 2
       Hash: 7ba86577a1f3d5b35e9eb696237bfa1e
@@ -2054,12 +2073,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: fda3c6e9d87ff0ec6957b8d0df268b76
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MultyCharacterControler
   platform: 19
   scenePathNames:
   - Assets/Scenes/MultyPlayer.unity

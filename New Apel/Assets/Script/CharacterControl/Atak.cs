@@ -1,9 +1,10 @@
+using Photon.Pun;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
-public class Atak : MonoBehaviour
+public class Atak : MonoBehaviourPunCallbacks
 {
     public GameObject object_toSpawn;
     private Animator animator;
@@ -29,7 +30,7 @@ public class Atak : MonoBehaviour
         {
             animator.SetTrigger("Recharge");
         }
-
+        else
         if (Input.GetButtonDown("Fire1") && CurentCharges != 0)
         {
             animator.SetTrigger("Atak");
@@ -52,9 +53,11 @@ public class Atak : MonoBehaviour
         CurentCharges--;
         GameObject obg;
         if (i == 0)
-             obg = Instantiate(object_toSpawn, spawnPoint1.position, spawnPoint1.rotation);
+             obg = PhotonNetwork.Instantiate(object_toSpawn.name, spawnPoint1.position, spawnPoint1.rotation);
         else
-             obg = Instantiate(object_toSpawn, spawnPoint2.position, spawnPoint2.rotation);
+             obg = PhotonNetwork.Instantiate(object_toSpawn.name, spawnPoint2.position, spawnPoint2.rotation);
+
+        print($"{obg.name}, {animator != null}, {object_toSpawn.name}");
 
         var rb = obg.GetComponent<Rigidbody>();
         rb.AddForce(transform.forward * force);

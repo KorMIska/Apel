@@ -25,6 +25,7 @@ public class MultyCharacterControler : MonoBehaviour
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         photonView = GetComponent<PhotonView>();
+
     }
 
     // Update is called once per frame
@@ -32,8 +33,14 @@ public class MultyCharacterControler : MonoBehaviour
     {
         if (!photonView.IsMine) return;
 
-
         movementVector = (transform.right * Input.GetAxis("Horizontal") + Input.GetAxis("Vertical") * transform.forward).normalized;
+
+        // ”становка анимации скорости передвижени€
+        if (movementVector.magnitude > 0.001f)
+            animator.SetFloat("Speed", 6);
+        else
+            animator.SetFloat("Speed", 0);
+
 
         if (!characterController.isGrounded)
         {
@@ -56,10 +63,6 @@ public class MultyCharacterControler : MonoBehaviour
 
 
 
-        // ”становка анимации скорости передвижени€
-        if (movementVector.magnitude > 0.001f)
-            animator.SetFloat("Speed", 6);
-        else
-            animator.SetFloat("Speed", 0);
+
     }
 }
