@@ -2,23 +2,23 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp:
     - Atak
-    - CharacterControllerMovement
     - CharacterControllerRotation
     - CharacterMinu
     - Dether_Efect
     - FollowObjectView
     - MultyCharacterControler
     - PlauerSetup
+    - Player
     - Updat
     Assembly-CSharp.dll:
     - Atak
-    - CharacterControllerMovement
     - CharacterControllerRotation
     - CharacterMinu
     - Dether_Efect
     - FollowObjectView
     - MultyCharacterControler
     - PlauerSetup
+    - Player
     - Roommaneger
     - StartAnim
     - Updat
@@ -39,7 +39,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PhotonViewInspector
     - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
@@ -215,21 +214,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7434}
     - Class: 114
-      Script: {instanceID: 7478}
-    - Class: 114
       Script: {instanceID: 7790}
     - Class: 114
       Script: {instanceID: 7914}
     - Class: 114
       Script: {instanceID: 8212}
     - Class: 114
-      Script: {instanceID: 26238}
+      Script: {instanceID: 26052}
     - Class: 114
-      Script: {instanceID: 26246}
+      Script: {instanceID: 28112}
     - Class: 114
-      Script: {instanceID: 26248}
+      Script: {instanceID: 28120}
     - Class: 114
-      Script: {instanceID: 26250}
+      Script: {instanceID: 28122}
+    - Class: 114
+      Script: {instanceID: 28124}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2073,6 +2072,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: d62e8164fa62d7428adec53532b8fad6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Player
   platform: 19
   scenePathNames:
   - Assets/Scenes/MultyPlayer.unity

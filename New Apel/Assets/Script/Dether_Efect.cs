@@ -1,3 +1,5 @@
+using Photon.Pun;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -13,9 +15,17 @@ public class Dether_Efect : MonoBehaviour
         if (obj != null) { _timer = obj.GetComponent<Atak>().timer; }
     }
 
-    private void OnCollisionEnter(Collision collision)
+private void OnCollisionEnter(Collision collision)
     {
-        Destroy(this.gameObject);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<Player>().Damage(25);
+
+           
+        }
+       
+         //Destroy(this.gameObject);
+   
     }
 
 }
