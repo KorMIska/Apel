@@ -347,6 +347,7 @@
 "Assets/Script/CharacterControl/RigidbodyRotation.cs"
 "Assets/Script/CharacterMinu.cs"
 "Assets/Script/Dether_Efect.cs"
+"Assets/Script/EventTextSyn.cs"
 "Assets/Script/FollowObjectView.cs"
 "Assets/Script/hitting the target.cs"
 "Assets/Script/Menu.cs"
@@ -356,6 +357,7 @@
 "Assets/Script/Roommaneger.cs"
 "Assets/Script/StartAnim.cs"
 "Assets/Script/UpdateTextUI.cs"
+"Assets/textSynchronization.cs"
 -langversion:9.0
 
 /deterministic

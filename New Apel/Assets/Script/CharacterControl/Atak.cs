@@ -66,7 +66,6 @@ public class Atak : MonoBehaviourPunCallbacks
                 if (rb != null)
                 {
                     rb.AddForce(transform.forward * force);
-                    print(transform.forward * force);
                 }
             }
         }
