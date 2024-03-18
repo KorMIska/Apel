@@ -12,16 +12,20 @@ ScriptsOnlyBuild:
     - Updat
     Assembly-CSharp.dll:
     - Atak
+    - ChangeWallText
     - CharacterControllerRotation
     - CharacterMinu
     - Dether_Efect
+    - EventTextSyn
     - FollowObjectView
     - MultyCharacterControler
     - PlauerSetup
     - Player
     - Roommaneger
     - StartAnim
+    - Target_
     - Updat
+    - textSynchronization
     PhotonUnityNetworking:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -42,6 +46,7 @@ ScriptsOnlyBuild:
     - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
+    - Photon.Pun.PhotonRigidbodyView
     - Photon.Pun.PhotonTransformView
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
@@ -52,11 +57,19 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshPro
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -93,6 +106,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
     - TMPro.TMP_Style
+    - TMPro.VertexGradient
     UnityEngine.CoreModule:
     - UnityEngine.Events.PersistentCallGroup
     UnityEngine.TextCoreFontEngineModule:
@@ -170,65 +184,75 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2906}
     - Class: 114
-      Script: {instanceID: 3120}
+      Script: {instanceID: 3064}
     - Class: 114
-      Script: {instanceID: 3126}
+      Script: {instanceID: 3122}
     - Class: 114
-      Script: {instanceID: 3542}
+      Script: {instanceID: 3128}
     - Class: 114
-      Script: {instanceID: 3958}
+      Script: {instanceID: 3544}
     - Class: 114
-      Script: {instanceID: 3962}
+      Script: {instanceID: 3662}
     - Class: 114
-      Script: {instanceID: 4032}
+      Script: {instanceID: 3960}
     - Class: 114
-      Script: {instanceID: 4130}
+      Script: {instanceID: 3964}
     - Class: 114
-      Script: {instanceID: 4268}
+      Script: {instanceID: 4034}
     - Class: 114
-      Script: {instanceID: 4528}
+      Script: {instanceID: 4132}
     - Class: 114
-      Script: {instanceID: 4778}
+      Script: {instanceID: 4270}
     - Class: 114
-      Script: {instanceID: 4822}
+      Script: {instanceID: 4530}
     - Class: 114
-      Script: {instanceID: 5196}
+      Script: {instanceID: 4780}
     - Class: 114
-      Script: {instanceID: 5212}
+      Script: {instanceID: 4824}
     - Class: 114
-      Script: {instanceID: 5268}
+      Script: {instanceID: 5198}
     - Class: 114
-      Script: {instanceID: 5614}
+      Script: {instanceID: 5214}
     - Class: 114
-      Script: {instanceID: 5656}
+      Script: {instanceID: 5270}
     - Class: 114
-      Script: {instanceID: 5812}
+      Script: {instanceID: 5616}
     - Class: 114
-      Script: {instanceID: 6328}
+      Script: {instanceID: 5658}
     - Class: 114
-      Script: {instanceID: 6544}
+      Script: {instanceID: 5690}
     - Class: 114
-      Script: {instanceID: 6920}
+      Script: {instanceID: 5814}
     - Class: 114
-      Script: {instanceID: 6958}
+      Script: {instanceID: 6330}
     - Class: 114
-      Script: {instanceID: 7434}
+      Script: {instanceID: 6546}
     - Class: 114
-      Script: {instanceID: 7790}
+      Script: {instanceID: 6922}
     - Class: 114
-      Script: {instanceID: 7914}
+      Script: {instanceID: 6960}
     - Class: 114
-      Script: {instanceID: 8212}
+      Script: {instanceID: 7392}
     - Class: 114
-      Script: {instanceID: 26052}
+      Script: {instanceID: 7436}
     - Class: 114
-      Script: {instanceID: 28112}
+      Script: {instanceID: 7792}
     - Class: 114
-      Script: {instanceID: 28120}
+      Script: {instanceID: 7916}
     - Class: 114
-      Script: {instanceID: 28122}
+      Script: {instanceID: 8214}
     - Class: 114
-      Script: {instanceID: 28124}
+      Script: {instanceID: 26120}
+    - Class: 114
+      Script: {instanceID: 27726}
+    - Class: 114
+      Script: {instanceID: 27734}
+    - Class: 114
+      Script: {instanceID: 27736}
+    - Class: 114
+      Script: {instanceID: 27738}
+    - Class: 114
+      Script: {instanceID: 32804}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -502,7 +526,7 @@ ScriptsOnlyBuild:
     className: PlayerNumbering
   - hash:
       serializedVersion: 2
-      Hash: 557ac423beb1b31e14f704c2fe8cd598
+      Hash: 4377b7694c8e8b9d4ce9fb5aa079005d
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Updat
@@ -526,7 +550,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomPropertiesListedInLobbyProperty
   - hash:
       serializedVersion: 2
-      Hash: 7bf6ae9b17274b7ef794fb0e1e3abd4f
+      Hash: 22c46927f532dd443e6ad2fe3aaac7c5
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Dether_Efect
@@ -662,6 +686,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
     className: OfflineModeProperty
+  - hash:
+      serializedVersion: 2
+      Hash: d62e8164fa62d7428adec53532b8fad6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Player
   - hash:
       serializedVersion: 2
       Hash: b98001682cba83786775c9e415b89a61
@@ -1390,7 +1420,7 @@ ScriptsOnlyBuild:
     className: Launcher
   - hash:
       serializedVersion: 2
-      Hash: 1d2f916e979e4febf8e759a768c0c097
+      Hash: bf768bf50a479186fbf04ca6bd6c337d
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ChangeWallText
@@ -1822,7 +1852,7 @@ ScriptsOnlyBuild:
     className: CurrentRoomExpectedUsersProperty
   - hash:
       serializedVersion: 2
-      Hash: 79107e51fa0173a0381af1462640b3a7
+      Hash: c6a0c349387f4812ea052106e098e79e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: Target_
@@ -2074,10 +2104,16 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: d62e8164fa62d7428adec53532b8fad6
+      Hash: d563435541bd87d96f7b670920259522
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: Player
+    className: textSynchronization
+  - hash:
+      serializedVersion: 2
+      Hash: ff5d31e2f93cd5747217555c7c43e445
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EventTextSyn
   platform: 19
   scenePathNames:
   - Assets/Scenes/MultyPlayer.unity

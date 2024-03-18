@@ -5,19 +5,26 @@ using UnityEngine.UI;
 
 public class Updat : MonoBehaviour
 {
-    Atak atak;
-    public GameObject obj;
-    Text text;
+    public Player player; // Предположим, что у вас есть компонент Player на другом игровом объекте
+    public Text text; // Предположим, что у вас есть компонент Text на другом игровом объекте
+
     // Start is called before the first frame update
     void Start()
     {
-        atak = obj.GetComponent<Atak>();
-        text = GetComponent<Text>();
+        player = FindObjectOfType<Player>(); // Используйте FindObjectOfType для поиска объекта с компонентом Player в сцене
+        text = GetComponent<Text>(); // Текст должен быть присвоен в инспекторе или найден программно, если он находится на другом объекте
     }
 
     // Update is called once per frame
     void Update()
     {
-        text.text = atak.CurentCharges.ToString();
+        if (player != null && text != null) // Убедитесь, что player и text не являются null перед обращением к ним
+        {
+            text.text = player.HP.ToString(); // Обновление текста
+        }
+         else
+        {
+            print("Noy");
+        }
     }
 }

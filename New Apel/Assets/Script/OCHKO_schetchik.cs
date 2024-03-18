@@ -1,21 +1,63 @@
+using ExitGames.Client.Photon;
+using Photon.Pun;
+using Photon.Realtime;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ChangeWallText : MonoBehaviour
+public class ChangeWallText : MonoBehaviour, IOnEventCallback
 {
     public TextMeshPro wallText;
-    public int Ochki = 0;
+    int score = 0;
 
     void Start()
     {
-        // Находим компонент TextMeshPro на стене
         wallText = GetComponent<TextMeshPro>();
     }
 
-    private void Update()
+
+    public void AddScore()
     {
-        wallText.text = Ochki.ToString();
+        score++;
+        wallText.text = score.ToString();
+
+        string message = score.ToString();
+        object[] data = new object[] { message };
+        RaiseEventOptions options = new RaiseEventOptions { Receivers = ReceiverGroup.All };
+        SendOptions sendOptions = new SendOptions { Reliability = true };
+
+
+        print("EVENTStart");
+
+        PhotonNetwork.RaiseEvent(1, data, options,sendOptions);
 
     }
+
+    private void OnEnable()
+    {
+        PhotonNetwork.AddCallbackTarget(this);
+    }
+
+    private void OnDisable()
+    {
+        PhotonNetwork.RemoveCallbackTarget(this);
+    }
+
+    public void OnEvent(EventData photonEvent)
+    {
+        switch (photonEvent.Code)
+        {
+            case 1:
+                {
+                    object[] data = (object[])photonEvent.CustomData;
+                    string text = (string)data[0];
+                    wallText.text = text;
+                    print(text);
+                    break;
+                }
+        }
+
+    }
+
+
 }

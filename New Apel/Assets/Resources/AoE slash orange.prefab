@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -2371527997676035962}
   - component: {fileID: 5517901661015660529}
   - component: {fileID: -8205031324417409776}
+  - component: {fileID: 7946328223571377296}
   m_Layer: 0
   m_Name: AoE slash orange
   m_TagString: Untagged
@@ -4957,7 +4958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5e0cea264a84694f9c2347ae23dc7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timer: 0
 --- !u!114 &-8205031324417409776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4974,12 +4974,29 @@ MonoBehaviour:
   Group: 0
   prefixField: -1
   Synchronization: 3
-  OwnershipTransfer: 0
+  OwnershipTransfer: 2
   observableSearch: 2
-  ObservedComponents: []
+  ObservedComponents:
+  - {fileID: 7946328223571377296}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &7946328223571377296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689667626583958020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!1 &1883585034484120993
 GameObject:
   m_ObjectHideFlags: 0

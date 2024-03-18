@@ -8,7 +8,7 @@ public class Roommaneger : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-        Screen.SetResolution(800, 600, false);
+        Screen.SetResolution(1024, 1024, false);
         print("Conecting...");
         PhotonNetwork.ConnectUsingSettings();
     }
