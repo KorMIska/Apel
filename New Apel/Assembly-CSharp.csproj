@@ -61,11 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
-    <Compile Include="Assets\OnStepDether.cs" />
     <Compile Include="Assets\Script\CharacterControl\CharacterControllerMovement.cs" />
     <Compile Include="Assets\Script\CharacterControl\MultyCharacterControler.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
-    <Compile Include="Assets\textSynchronization.cs" />
     <Compile Include="Assets\Script\CharacterControl\RigidbodyMovement.cs" />
     <Compile Include="Assets\Script\CharacterMinu.cs" />
     <Compile Include="Assets\Script\EventTextSyn.cs" />
@@ -77,6 +75,7 @@
     <Compile Include="Assets\Script\OCHKO_schetchik.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
     <Compile Include="Assets\Script\Roommaneger.cs" />
+    <Compile Include="Assets\Script\OnStepDether.cs" />
     <Compile Include="Assets\Script\UpdateTextUI.cs" />
     <Compile Include="Assets\Script\hitting the target.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
@@ -85,6 +84,7 @@
     <Compile Include="Assets\Script\CharacterControl\Atak.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\StartAnim.cs" />
+    <Compile Include="Assets\Script\textSynchronization.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
     <Compile Include="Assets\Script\Dether_Efect.cs" />
