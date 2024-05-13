@@ -352,12 +352,13 @@
 "Assets/Script/hitting the target.cs"
 "Assets/Script/Menu.cs"
 "Assets/Script/OCHKO_schetchik.cs"
+"Assets/Script/OnStepDether.cs"
 "Assets/Script/PlauerSetup.cs"
 "Assets/Script/Player.cs"
 "Assets/Script/Roommaneger.cs"
 "Assets/Script/StartAnim.cs"
+"Assets/Script/textSynchronization.cs"
 "Assets/Script/UpdateTextUI.cs"
-"Assets/textSynchronization.cs"
 -langversion:9.0
 
 /deterministic

@@ -4,13 +4,29 @@ using UnityEngine;
 
 public class OnStepDether : MonoBehaviour
 {
+    [SerializeField] float maxTime;
+
+    private float timer;
+
+    private void Awake()
+    {
+        timer = maxTime;
+    }
 
     private void OnTriggerStay(Collider other)
     {
-        print("triger");
+
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<Player>().Damage(25);
+            if (timer <= 0)
+            {
+                other.gameObject.GetComponent<Player>().Damage(25);
+                timer = maxTime;
+            }
+            else
+            {
+                timer -= Time.deltaTime;
+            }
         }
     }
 
