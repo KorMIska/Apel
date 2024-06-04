@@ -20,7 +20,6 @@ public class OnStepDether : MonoBehaviour
         {
             if (timer <= 0)
             {
-                other.gameObject.GetComponent<Player>().Damage(25);
                 timer = maxTime;
             }
             else
