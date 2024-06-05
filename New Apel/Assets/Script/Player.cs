@@ -1,6 +1,5 @@
 using ExitGames.Client.Photon;
 using Photon.Pun;
-using Photon.Pun.Demo.SlotRacer;
 using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
