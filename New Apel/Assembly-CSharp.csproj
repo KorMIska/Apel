@@ -83,6 +83,7 @@
     <Compile Include="Assets\Script\CharacterControl\RigidbodyRotation.cs" />
     <Compile Include="Assets\Script\CharacterControl\Atak.cs" />
     <Compile Include="Assets\Script\Player.cs" />
+    <Compile Include="Assets\Script\CharacterControl\offAtak.cs" />
     <Compile Include="Assets\Script\StartAnim.cs" />
     <Compile Include="Assets\Script\textSynchronization.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
@@ -130,7 +131,6 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\Impotr\Hovl Studio\Magic effects pack\Demo scene\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
@@ -1064,6 +1064,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{99EEB285-2BEB-845D-298A-7DE9B031576C}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
       <Project>{22A7485C-E519-7983-DF4D-68E34F0A3122}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>

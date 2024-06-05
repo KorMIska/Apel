@@ -9,7 +9,6 @@ public class Atak : MonoBehaviourPunCallbacks
     public GameObject object_toSpawn;
     private Animator animator;
     public Transform spawnPoint1;
-    public Transform spawnPoint2;
     public float force = 9000;
     public int timer = 200;
     public int NumberÑharges = 6;
@@ -48,17 +47,10 @@ public class Atak : MonoBehaviourPunCallbacks
 
     void InitOb()
     {
-        if (animator != null && CurentCharges > 0 && object_toSpawn != null && spawnPoint1 != null && spawnPoint2 != null)
+        if (animator != null && CurentCharges > 0 && object_toSpawn != null && spawnPoint1 != null)
         {
-            int i = animator.GetInteger("NomerAtak");
-            i = i == 0 ? 1 : 0;
-            animator.SetInteger("NomerAtak", i);
-
             GameObject obg;
-            if (i == 0)
-                obg = PhotonNetwork.Instantiate(object_toSpawn.name, spawnPoint1.position, spawnPoint1.rotation);
-            else
-                obg = PhotonNetwork.Instantiate(object_toSpawn.name, spawnPoint2.position, spawnPoint2.rotation);
+            obg = PhotonNetwork.Instantiate(object_toSpawn.name, spawnPoint1.position, spawnPoint1.rotation);
 
             if (obg != null)
             {

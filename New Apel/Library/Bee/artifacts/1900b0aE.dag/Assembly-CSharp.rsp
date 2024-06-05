@@ -388,6 +388,7 @@
 "Assets/Script/CharacterControl/CharacterControllerMovement.cs"
 "Assets/Script/CharacterControl/CharacterControllerRotation.cs"
 "Assets/Script/CharacterControl/MultyCharacterControler.cs"
+"Assets/Script/CharacterControl/offAtak.cs"
 "Assets/Script/CharacterControl/RigidbodyMovement.cs"
 "Assets/Script/CharacterControl/RigidbodyRotation.cs"
 "Assets/Script/CharacterMinu.cs"

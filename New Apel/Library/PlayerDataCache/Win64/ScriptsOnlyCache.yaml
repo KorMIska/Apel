@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp:
     - Atak
+    - CharacterControllerMovement
     - CharacterControllerRotation
     - CharacterMinu
     - Dether_Efect
@@ -13,12 +14,14 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Atak
     - ChangeWallText
+    - CharacterControllerMovement
     - CharacterControllerRotation
     - CharacterMinu
     - Dether_Efect
     - EventTextSyn
     - FollowObjectView
     - MultyCharacterControler
+    - OnStepDether
     - PlauerSetup
     - Player
     - Roommaneger
@@ -176,83 +179,87 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1826}
     - Class: 114
-      Script: {instanceID: 2238}
+      Script: {instanceID: 1998}
     - Class: 114
-      Script: {instanceID: 2506}
+      Script: {instanceID: 2240}
     - Class: 114
-      Script: {instanceID: 2640}
+      Script: {instanceID: 2508}
     - Class: 114
-      Script: {instanceID: 2906}
+      Script: {instanceID: 2642}
     - Class: 114
-      Script: {instanceID: 3064}
+      Script: {instanceID: 2908}
     - Class: 114
-      Script: {instanceID: 3122}
+      Script: {instanceID: 3066}
     - Class: 114
-      Script: {instanceID: 3128}
+      Script: {instanceID: 3124}
     - Class: 114
-      Script: {instanceID: 3544}
+      Script: {instanceID: 3130}
     - Class: 114
-      Script: {instanceID: 3662}
+      Script: {instanceID: 3546}
     - Class: 114
-      Script: {instanceID: 3960}
+      Script: {instanceID: 3664}
     - Class: 114
-      Script: {instanceID: 3964}
+      Script: {instanceID: 3962}
     - Class: 114
-      Script: {instanceID: 4034}
+      Script: {instanceID: 3966}
     - Class: 114
-      Script: {instanceID: 4132}
+      Script: {instanceID: 4036}
     - Class: 114
-      Script: {instanceID: 4270}
+      Script: {instanceID: 4134}
     - Class: 114
-      Script: {instanceID: 4530}
+      Script: {instanceID: 4272}
     - Class: 114
-      Script: {instanceID: 4780}
+      Script: {instanceID: 4436}
     - Class: 114
-      Script: {instanceID: 4824}
+      Script: {instanceID: 4534}
     - Class: 114
-      Script: {instanceID: 5198}
+      Script: {instanceID: 4784}
     - Class: 114
-      Script: {instanceID: 5214}
+      Script: {instanceID: 4828}
     - Class: 114
-      Script: {instanceID: 5270}
+      Script: {instanceID: 5202}
     - Class: 114
-      Script: {instanceID: 5616}
+      Script: {instanceID: 5218}
     - Class: 114
-      Script: {instanceID: 5658}
+      Script: {instanceID: 5274}
     - Class: 114
-      Script: {instanceID: 5690}
+      Script: {instanceID: 5620}
     - Class: 114
-      Script: {instanceID: 5814}
+      Script: {instanceID: 5662}
     - Class: 114
-      Script: {instanceID: 6330}
+      Script: {instanceID: 5694}
     - Class: 114
-      Script: {instanceID: 6546}
+      Script: {instanceID: 5818}
     - Class: 114
-      Script: {instanceID: 6922}
+      Script: {instanceID: 6064}
     - Class: 114
-      Script: {instanceID: 6960}
+      Script: {instanceID: 6336}
     - Class: 114
-      Script: {instanceID: 7392}
+      Script: {instanceID: 6552}
     - Class: 114
-      Script: {instanceID: 7436}
+      Script: {instanceID: 6928}
     - Class: 114
-      Script: {instanceID: 7792}
+      Script: {instanceID: 6966}
     - Class: 114
-      Script: {instanceID: 7916}
+      Script: {instanceID: 7398}
     - Class: 114
-      Script: {instanceID: 8214}
+      Script: {instanceID: 7442}
     - Class: 114
-      Script: {instanceID: 26120}
+      Script: {instanceID: 7486}
     - Class: 114
-      Script: {instanceID: 27726}
+      Script: {instanceID: 7798}
     - Class: 114
-      Script: {instanceID: 27734}
+      Script: {instanceID: 7922}
     - Class: 114
-      Script: {instanceID: 27736}
+      Script: {instanceID: 8220}
     - Class: 114
-      Script: {instanceID: 27738}
+      Script: {instanceID: 28728}
     - Class: 114
-      Script: {instanceID: 32804}
+      Script: {instanceID: 28736}
+    - Class: 114
+      Script: {instanceID: 28738}
+    - Class: 114
+      Script: {instanceID: 28740}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -428,6 +435,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
     className: CurrentRoomIsVisibleProperty
+  - hash:
+      serializedVersion: 2
+      Hash: c41b93ccf21cb9994bc312eea94dacdf
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: OnStepDether
   - hash:
       serializedVersion: 2
       Hash: 5e82999b234bc0d078492d7332ef3cfd
@@ -1084,6 +1097,12 @@ ScriptsOnlyBuild:
     className: DocLinkButton
   - hash:
       serializedVersion: 2
+      Hash: ff5d31e2f93cd5747217555c7c43e445
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: EventTextSyn
+  - hash:
+      serializedVersion: 2
       Hash: e7e95903ca66d58e1a7cbd71f824e16d
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -1490,6 +1509,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
     className: RoomListView
+  - hash:
+      serializedVersion: 2
+      Hash: d563435541bd87d96f7b670920259522
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: textSynchronization
   - hash:
       serializedVersion: 2
       Hash: dbc1b706762e7ec1dcaa764596e0ac53
@@ -2104,18 +2129,12 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: d563435541bd87d96f7b670920259522
+      Hash: 40d617224c7471e1adfa3e9b4e039224
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: textSynchronization
-  - hash:
-      serializedVersion: 2
-      Hash: ff5d31e2f93cd5747217555c7c43e445
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: EventTextSyn
+    className: offAtak
   platform: 19
   scenePathNames:
   - Assets/Scenes/MultyPlayer.unity
-  playerPath: "C:/Users/\u044F\u044F\u044F\u044F\u044F\u044F\u044F\u044F/Downloads/New
+  playerPath: "C:/Users/\u0414\u043C\u0438\u0442\u0440\u0438\u0439/Documents/bi/New
     Apel.exe"

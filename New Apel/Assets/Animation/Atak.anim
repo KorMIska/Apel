@@ -1088,7 +1088,7 @@ AnimationClip:
   - time: 0.41666666
     functionName: InitOb
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 7709768843466720070, guid: e162f567b5c903741b736c18798f1dfd, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

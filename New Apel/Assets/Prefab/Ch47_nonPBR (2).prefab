@@ -291,10 +291,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8677689830958757271}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -821.4, y: 207.40002}
-  m_SizeDelta: {x: 1460.6, y: 341.3}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 458.59998, y: -512.6}
+  m_SizeDelta: {x: -1099.4, y: -1098.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7810088177995752276
 CanvasRenderer:
@@ -350,7 +350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50987043a9929954e89db98692558a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 7709768843466720070}
+  player: {fileID: 0}
+  text: {fileID: 0}
 --- !u!1 &5858228458471102193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,10 +2091,13 @@ PrefabInstance:
       addedObject: {fileID: 2913700150886214800}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6a9aea7375863c49811342d7569e454, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5120558215778061189}
+      addedObject: {fileID: 8628687355964307794}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6a9aea7375863c49811342d7569e454, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5018028126626152048}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6a9aea7375863c49811342d7569e454, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7617710853529812173}
   m_SourcePrefab: {fileID: 100100000, guid: e6a9aea7375863c49811342d7569e454, type: 3}
 --- !u!4 &698364411812493630 stripped
 Transform:
@@ -2141,7 +2145,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.98, z: 0}
---- !u!114 &5120558215778061189
+--- !u!114 &8628687355964307794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2150,12 +2154,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7709768843466720070}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f751a18face380c4da736f7337164f7f, type: 3}
+  m_Script: {fileID: 11500000, guid: 10707fc60bc9ebf4f98febb1acfdba2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   object_toSpawn: {fileID: 689667626583958020, guid: 1336648bc1d8baf46a4515860950c9d4, type: 3}
   spawnPoint1: {fileID: 5701176828828623240}
-  spawnPoint2: {fileID: 4096155066675368194}
   force: 9000
   timer: 200
   "Number\u0421harges": 6
@@ -2172,3 +2175,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0141d469fd64084087b57caf0fa510b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7617710853529812173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7709768843466720070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d4ced44581914d4e94c39926d33f78c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 35
+  JumpS: 25
